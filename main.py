@@ -38,5 +38,5 @@ def get_shop(publisher):
         print(s.id, s.name)
 
 
-publisher = input("Введите название издательства (O’Reilly, Pearson, Microsoft Press): ")
+publisher = input("Введите название издательства (O’Reilly, Pearson, Microsoft Press, No starch press): ")
 get_shop(publisher)
