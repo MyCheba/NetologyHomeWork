@@ -33,7 +33,7 @@ session.commit()
 def get_shop(publisher):
     subq = session.query(Book.id).join(Publisher.books).filter(Publisher.name == publisher).subquery()
     q = session.query(Shop).join(Stock.shop).join(subq, Stock.id_book == subq.c.id)
-    print(q)
+    # print(q)
     for s in q.all():
         print(s.id, s.name)
 
